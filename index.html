@@ -37,10 +37,10 @@
 		  .one-third.js-fullheight.order-md-last.img {
 			background-size: 75%; /* Adjust size for tablets */
 		  }
-		  /* Add this for Co-curricular Activities */
 		  .co-curricular { /* Adjust this class or ID */
 			font-size: 16px; /* Adjust font size for better fit */
 			padding: 5px; /* Adjust padding to ensure text fits within the container */
+			text-align: center; /* Center-align text */
 		  }
 		}
 	  
@@ -49,16 +49,12 @@
 			flex-direction: column;
 			text-align: center;
 		  }
-		  .navbar-nav .nav-item {
-			margin-bottom: 5px;
-		  }
-		  /* Adjust background image for devices with width up to 480px */
 		  .co-curricular { /* Adjust this class or ID */
-			font-size: 14px; /* Further reduce font size for smaller devices */
-			padding: 5px 10px; /* Adjust padding as needed */
-			white-space: nowrap; /* Prevents the text from wrapping */
-			overflow: hidden; /* Hide overflow text */
-			text-overflow: ellipsis; /* Add ellipsis if text overflows */
+			text-align: center; /* Ensure text is centered */
+			/* Additional adjustments for better centering */
+			display: flex;
+			justify-content: center; /* Center content horizontally */
+			width: 100%; /* Ensure full width to avoid wrapping issues */
 		  }
 		}
 	  </style>
