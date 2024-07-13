@@ -25,7 +25,7 @@
 
 
 	<style>
-		/* General styles for smaller screens */
+		/* Existing styles */
 		@media (max-width: 768px) {
 		  .navbar-nav {
 			flex-direction: column;
@@ -34,13 +34,16 @@
 		  .navbar-nav .nav-item {
 			margin-bottom: 10px;
 		  }
-		  /* Adjust background image for devices with width up to 768px */
 		  .one-third.js-fullheight.order-md-last.img {
 			background-size: 75%; /* Adjust size for tablets */
 		  }
+		  /* Add this for Co-curricular Activities */
+		  .co-curricular { /* Adjust this class or ID */
+			font-size: 16px; /* Adjust font size for better fit */
+			padding: 5px; /* Adjust padding to ensure text fits within the container */
+		  }
 		}
 	  
-		/* More specific styles for very small screens, typically phones */
 		@media (max-width: 480px) {
 		  .navbar-nav {
 			flex-direction: column;
@@ -50,13 +53,15 @@
 			margin-bottom: 5px;
 		  }
 		  /* Adjust background image for devices with width up to 480px */
-		  .one-third.js-fullheight.order-md-last.img {
-			background-size: 100%; /* Adjust size for smaller devices */
-			background-position: center; /* Ensure the image is centered */
+		  .co-curricular { /* Adjust this class or ID */
+			font-size: 14px; /* Further reduce font size for smaller devices */
+			padding: 5px 10px; /* Adjust padding as needed */
+			white-space: nowrap; /* Prevents the text from wrapping */
+			overflow: hidden; /* Hide overflow text */
+			text-overflow: ellipsis; /* Add ellipsis if text overflows */
 		  }
 		}
 	  </style>
-
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
