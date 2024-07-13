@@ -34,46 +34,28 @@
 		  .navbar-nav .nav-item {
 			margin-bottom: 10px;
 		  }
-		  .hero .home-slider .slider-item .one-third {
-			display: none;
-		  }
-		  .hero .home-slider .slider-item .one-forth {
-			width: 100%;
-			text-align: center;
-		  }
-		  .hero .home-slider .slider-item .text {
-			font-size: 14px;
-			padding: 20px;
-		  }
-		  .ftco-animate {
-			animation: none;
-		  }
-		  .resume-wrap {
-			margin-bottom: 20px;
-		  }
-		  .resume-wrap h2 {
-			font-size: 16px;
-		  }
-		  .zoom-effect {
-			width: 100%;
-			height: auto;
-		  }
-		  .container {
-			padding: 0 10px;
+		  /* Adjust background image for devices with width up to 768px */
+		  .one-third.js-fullheight.order-md-last.img {
+			background-size: 75%; /* Adjust size for tablets */
 		  }
 		}
 	  
-		/* More specific styles for very small screens */
+		/* More specific styles for very small screens, typically phones */
 		@media (max-width: 480px) {
-		  .hero .home-slider .slider-item .text h1 {
-			font-size: 24px;
+		  .navbar-nav {
+			flex-direction: column;
+			text-align: center;
 		  }
-		  .hero .home-slider .slider-item .text {
-			padding: 10px;
+		  .navbar-nav .nav-item {
+			margin-bottom: 5px;
+		  }
+		  /* Adjust background image for devices with width up to 480px */
+		  .one-third.js-fullheight.order-md-last.img {
+			background-size: 100%; /* Adjust size for smaller devices */
+			background-position: center; /* Ensure the image is centered */
 		  }
 		}
 	  </style>
-	  
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -102,9 +84,9 @@
 			<div class="overlay"></div>
 			<div class="container">
 			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-				  <div class="overlay"></div>
-				</div>
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png); background-size: 70%; background-repeat: no-repeat;">
+					<div class="overlay"></div>
+				  </div>
 				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 				  <div class="text">
 					<span class="subheading">Hello!</span>
