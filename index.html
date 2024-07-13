@@ -25,6 +25,17 @@
 
 
 	<style>
+  /* Hover effect for project names and descriptions */
+  .heading a:hover, .text p:hover {
+    color: #007bff; /* Change color on hover */
+    transition: color 0.3s ease-in-out;
+  }
+
+  /* Hover effect for project images */
+  .block-20:hover {
+    transform: scale(1.05); /* Slightly scale up the image */
+    transition: transform 0.3s ease-in-out;
+  }
 		/* Existing styles */
 		@media (max-width: 768px) {
 		  .navbar-nav {
@@ -43,21 +54,29 @@
 			text-align: center; /* Center-align text */
 		  }
 		}
-	  
-		@media (max-width: 480px) {
-		  .navbar-nav {
-			flex-direction: column;
-			text-align: center;
-		  }
-		  .co-curricular { /* Adjust this class or ID */
-			text-align: center; /* Ensure text is centered */
-			/* Additional adjustments for better centering */
-			display: flex;
-			justify-content: center; /* Center content horizontally */
-			width: 100%; /* Ensure full width to avoid wrapping issues */
-		  }
-		}
-	  </style>
+        /* More specific styles for very small screens */
+        @media (max-width: 480px) {
+          .hero .home-slider .slider-item .text h1 {
+            font-size: 24px;
+          }
+          .hero .home-slider .slider-item .text {
+            padding: 10px;
+          }
+        }
+
+    /* Add your hover effect CSS here */
+    .heading a:hover, .text p:hover {
+      color: #007bff; /* Change color on hover */
+      transition: color 0.3s ease-in-out;
+    }
+
+    .block-20:hover {
+      transform: scale(1.05); /* Slightly scale up the image */
+      transition: transform 0.3s ease-in-out;
+    }
+
+      </style>
+...
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
