@@ -36,7 +36,12 @@
     transform: scale(1.05); /* Slightly scale up the image */
     transition: transform 0.3s ease-in-out;
   }
-		/* Existing styles */
+  .centered-title {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      width: 100%; /* Ensure it takes the full width */
+      text-align: center; /* Center the text inside the div */
+    }
 		@media (max-width: 768px) {
 		  .navbar-nav {
 			flex-direction: column;
@@ -74,6 +79,7 @@
       transform: scale(1.05); /* Slightly scale up the image */
       transition: transform 0.3s ease-in-out;
     }
+	
 
       </style>
 ...
@@ -178,9 +184,11 @@
 			  </div>
 			  </div>
 			  <div class="row" style="margin-bottom: 30px; margin-top: 50px;"> <!-- Adjusted top margin for additional space -->
-				<h1 class="big-3" style="margin-left: 20px;">Co-curricular Activities</h1> <!-- Added left margin -->
-				<div class="underline"></div>
+				<div class="centered-title">
+				  <h1 class="big-3">Co-curricular Activities</h1> <!-- Removed inline style for left margin -->
 				</div>
+				<div class="underline"></div>
+			  </div>
   <br>
   <div class="row">
 	<div class="col-md-4">
