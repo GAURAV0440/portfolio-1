@@ -79,7 +79,90 @@
       transform: scale(1.05); /* Slightly scale up the image */
       transition: transform 0.3s ease-in-out;
     }
-	
+	/* Basic styling for the project section */
+#project-section .container {
+    max-width: 1200px; /* Adjusts the maximum width of the container */
+    margin: auto; /* Centers the container */
+    padding: 15px; /* Adds padding inside the container */
+}
+
+/* Styling for the heading section */
+#project-section .heading-section {
+    margin-bottom: 30px; /* Space below the heading */
+    text-align: center; /* Centers the text */
+    color: #fff; /* Sets text color to white */
+}
+
+#project-section .heading-section h1,
+#project-section .heading-section h2 {
+    margin: 10px 0; /* Space above and below headings */
+}
+
+/* Flexbox setup for rows and entries */
+#project-section .row {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+#project-section .col-md-4 {
+    flex: 0 0 33.333%; /* Each box takes up one-third of the row */
+    max-width: 33.333%; /* Maximum width of each column */
+    padding: 10px; /* Padding around each project entry */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Styling for blog entries */
+#project-section .blog-entry {
+    background: #000; /* Background color for project entries */
+    color: #fff; /* Text color for content */
+    border: 1px solid #222; /* Border around the entries */
+    margin: 5px; /* Margin around each entry */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Adds shadow for 3D effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+}
+
+#project-section .blog-entry:hover {
+    transform: scale(1.03); /* Scales up the entry on hover */
+}
+
+/* Styling for images and links */
+#project-section .block-20 {
+    height: 200px; /* Fixed height for images */
+    background-size: cover; /* Ensures the background covers the entire element */
+    background-position: center; /* Centers the background image */
+}
+
+#project-section .text {
+    padding: 15px; /* Padding inside the text block */
+}
+
+/* Styling for links and headings within entries */
+#project-section .heading a {
+    color: #007bff; /* Color for links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+#project-section .heading a:hover {
+    color: #00aaff; /* Color for links on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #project-section .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    #project-section .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%; /* Half width for medium screens */
+    }
+}
+
 
       </style>
 ...
@@ -273,31 +356,50 @@
 				  <h3 class="heading"><a href="https://github.com/GAURAV0440/Virtual-Assistant">Virtual Assistant</a></h3>
 				  <p>A Python project leveraging speech recognition, pyautogui, pywhatkit, and the OpenAI API to provide voice-controlled assistance for tasks such as answering questions, providing weather updates, managing schedules, and controlling smart devices.</p>
 				</div>
-			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				  <a href="https://github.com/GAURAV0440/Deep-Learning-project-DogvsCat-" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
-				  <div class="text mt-3 float-right d-block">
-					<h3 class="heading"><a href="https://github.com/GAURAV0440/Virtual-Assistant">Dog Vs Cat Classification</a></h3>
-					<p>I developed a deep learning project for dog vs. cat classification using CNNs. Leveraging numpy, random, and tensorflow.keras, I built a model with Conv2D, MaxPooling2D, Dense, and Flatten layers. The model achieved high accuracy, and results were visualized with matplotlib.</p>
-				  </div>
+		  </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/GAURAV0440/Dog-vs-Cat-Classification" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/GAURAV0440/Dog-vs-Cat-Classification"> Dog vs Cat Classification</a></h3>
+				  <p>This project focuses on classifying images of dogs and cats using a deep learning model built with TensorFlow.</p>
+				</div>
+			  </div>
+		  </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/GAURAV0440/Fruits-and-Vegetables-Image-Classification" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/GAURAV0440/Fruits-and-Vegetables-Image-Classification"> Fruits and Vegetables Classification</a></h3>
+				  <p>This project focuses on classifying fruits and vegetables using a deep learning model built with TensorFlow. The model uses NumPy for data handling, Pandas for manipulation, and Matplotlib for visualization. TensorFlow's Keras API is employed to create and train the neural network for accurate image classification.</p>
 				</div>
 			  </div>
 		  </div>
 		</div>
-		<div class="col-md-4 d-flex ftco-animate">
-			<div class="blog-entry justify-content-end">
-			  <a href="https://github.com/GAURAV0440/Deep-Learning-project-DogvsCat-" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');"></a>
-			  <div class="text mt-3 float-right d-block">
-				<h3 class="heading"><a href="https://github.com/GAURAV0440/Virtual-Assistant"> Fruits and Vegetables Classification</a></h3>
-				<p>This project focuses on classifying fruits and vegetables using a deep learning model built with TensorFlow. The model uses NumPy for data handling, Pandas for manipulation, and Matplotlib for visualization. TensorFlow's Keras API is employed to create and train the neural network for accurate image classification.</p>
+	  </div>
+		</section>
+		
+	  <!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+		  <div class="row d-md-flex align-items-center">
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  <strong class="number" data-number="20">0</strong>
+				  <span>Achievements</span>
+				</div>
 			  </div>
 			</div>
-		  </div>
-	  </div>
-	</div>
-	  </section>
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  <strong class="number" data-number="30">0</strong>
+				  <span>Projects</span>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 	  
 	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
