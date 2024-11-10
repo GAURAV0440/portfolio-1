@@ -115,12 +115,12 @@
 
 /* Styling for blog entries */
 #project-section .blog-entry {
-    background: #000; /* Background color for project entries */
-    color: #fff; /* Text color for content */
-    border: 1px solid #222; /* Border around the entries */
-    margin: 5px; /* Margin around each entry */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Adds shadow for 3D effect */
-    transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 #project-section .blog-entry:hover {
@@ -129,13 +129,16 @@
 
 /* Styling for images and links */
 #project-section .block-20 {
-    height: 200px; /* Fixed height for images */
-    background-size: cover; /* Ensures the background covers the entire element */
-    background-position: center; /* Centers the background image */
+  height: 200px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
 }
 
 #project-section .text {
-    padding: 15px; /* Padding inside the text block */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Styling for links and headings within entries */
@@ -317,9 +320,7 @@
 	  <a href="https://docs.google.com/document/d/1ugYspq9QWOLnwAzAEOoV5JRzn6iytsQoEktEXhfLfjM/edit?usp=sharing" target="_blank" class="btn btn-primary" style="font-size: 15px;">View My Resume</a>
 	</div>
   </div>
-</section>
-
-   
+</section> 
 
 <section class="ftco-section" id="project-section">
 	<div class="container">
@@ -380,7 +381,7 @@
 		  <div class="blog-entry justify-content-end">
 			<a href="https://github.com/GAURAV0440/GAURAV0440-Underwater_Object_Detection" class="block-20 zoom-effect" style="background-image: url('images/proj7.jpg');"></a>
 			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/GAURAV0440/GAURAV0440-Underwater_Object_Detection">Underwater_Object_DetectionSystem</a></h3>
+			  <h3 class="heading"><a href="https://github.com/GAURAV0440/GAURAV0440-Underwater_Object_Detection">Underwater_Object_Detection System</a></h3>
 			  <p>This underwater object detection system uses YOLOv8 to quickly and accurately identify objects in underwater images. It's trained on aquatic data to recognize marine objects, making it ideal for researchers and marine monitoring applications, ensuring efficient and precise underwater analysis.</p>
 			</div>
 		  </div>
